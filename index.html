@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      form{
+        
+        text-align: center;
+      }
+      form>input{
+        margin-top: 16px;
+        border:none;
+        padding:10px;
+        
+        width:400px;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+      }
+      form>button{
+        border:none;
+        color:red;
+        background-color: rgb(219, 243, 243);
+        width:130px;
+        height:25px;
+        border-radius: 5px;
+        margin-top: 12px;
+        cursor: pointer;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        
+      }
+      #navbar>a{
+          text-decoration: none;
+          color:rgb(252, 8, 8);
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          cursor: pointer;
+          font-weight: bolder;
+           padding:7px;
+           border-radius: 5px;
+           font-size: 25px;
+        
+      }
+      #navbar>a:hover{
+        color:blue;
+        background-color: teal;
+        font-size: 35px;
+      }
+      
+      #navbar>h3{
+        color:grey;
+        font-size: 45px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: rgb(216, 209, 101);
+        text-align: center;
+        width:300px;
+
+      }
+      </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h3>Sign Up</h3>
+      <a href="voucher.html">Purchase Voucher</a>
+    </div>
+    <form action="">
+      <input type="name" id="name" placeholder="Enter your name"> <br> 
+      <input type="email" id="email" placeholder="Enter your emali"> <br>
+      <input type="address" id="address" placeholder="Enter your address"> <br>
+      <input type="amount" id="amount" placeholder="Enter your amount"> <br>
+      <button onclick="savedata()" >Submit</button> <br>
+    </form>
+    <!-- - name input box :- "name"
+  - email input box :- "email"
+  - Address input box :- "address"
+  - Amount input box :- "amount" 
+  - Submit button :- "submit"
+  - The user will be stored with key:- "user"
+  - The input fields should become empty after submitting -->
+  </body>
+</html>
